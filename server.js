@@ -16,11 +16,7 @@ app.use(koaBody({
 app.use(cors())
 app.use(router())
 
-
 app.listen(port)
 console.log('listen port ' + port)
 
 StartGame()
-
-
-

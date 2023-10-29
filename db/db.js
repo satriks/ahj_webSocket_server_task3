@@ -1,10 +1,9 @@
 const game = {
 
-
   logs: [],
   listener: [],
 
-  add(sportEvent) {
+  add (sportEvent) {
     this.logs.push(sportEvent)
     // console.log(sportEvent);
     this.listener.forEach(handler => handler(sportEvent))

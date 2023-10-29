@@ -7,9 +7,9 @@ const generator = {
 
     randomEvent(){
         const random =  Math.floor(Math.random() * 10);
-        if(random === 5) {return  new SportEvent(generator.goal);}
-        if(random > 5) {return new SportEvent(generator.freekick);}
-        return new SportEvent(generator.action);
+        if(random === 5) {return  new SportEvent(generator.goal, 'goal');}
+        if(random > 5) {return new SportEvent(generator.freekick, 'freekick');}
+        return new SportEvent(generator.action, 'action');
     }
 
 }

@@ -19,7 +19,8 @@ router.get('/sse', async (ctx) => {
       })
 
       sse.sendEvent({
-        logs: JSON.stringify(game.logs)
+        event: 'logs',
+        data: JSON.stringify(game.logs)
       })
 
       return () => {}

@@ -6,7 +6,7 @@ const game = {
 
   add(sportEvent) {
     this.logs.push(sportEvent)
-    console.log(sportEvent);
+    // console.log(sportEvent);
     this.listener.forEach(handler => handler(sportEvent))
   },
 
